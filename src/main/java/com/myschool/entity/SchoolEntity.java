@@ -29,4 +29,7 @@ public class SchoolEntity {
     protected void onCreate() {
         createdAt = LocalDateTime.now();
     }
+
+    // Note: Bidirectional collections removed to prevent performance issues
+    // Use repository queries instead: studentRepository.findBySchool(school)
 }

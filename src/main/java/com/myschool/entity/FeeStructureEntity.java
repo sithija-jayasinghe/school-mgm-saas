@@ -20,4 +20,7 @@ public class FeeStructureEntity {
     private FeeCategoryEntity feeCategory;
 
     private Double amount;
+
+    // High-volume collection removed
+    // Use repository queries: studentFeeRepository.findByFeeStructure(feeStructure)
 }

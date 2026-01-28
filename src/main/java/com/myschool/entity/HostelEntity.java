@@ -2,6 +2,7 @@ package com.myschool.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.util.Set;
 
 @Data
 @Entity
@@ -17,4 +18,8 @@ public class HostelEntity {
 
     private String type;
     private Integer capacity;
+
+    // Many-to-Many relationship with students via junction entity
+    @OneToMany(mappedBy = "hostel")
+    private Set<StudentHostelEntity> students;
 }

@@ -2,6 +2,7 @@ package com.myschool.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.util.Set;
 
 @Data
 @Entity
@@ -18,4 +19,8 @@ public class TransportEntity {
     private String busNo;
     private String route;
     private String driverName;
+
+    // Many-to-Many relationship with students via junction entity
+    @OneToMany(mappedBy = "transport")
+    private Set<StudentTransportEntity> students;
 }

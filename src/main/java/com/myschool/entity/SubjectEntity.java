@@ -17,4 +17,9 @@ public class SubjectEntity {
 
     private String subjectName;
     private String subjectCode;
+
+    // Bidirectional collections removed - subjects are used in many places
+    // Use repository queries: classSubjectRepository.findBySubject(subject)
+    // Use repository queries: examSubjectRepository.findBySubject(subject)
+    // Use repository queries: markRepository.findBySubject(subject)
 }

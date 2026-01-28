@@ -4,44 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a30bc736-bf31-4e47-8d79-786d60ab99e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a30bc736-bf31-4e47-8d79-786d60ab99e4" name="Changes" comment="update application.yml for JPA ddl-auto setting and add XML configuration files for data migration and project settings">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/controller/RestApiExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/CanteenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/ClubDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/ExamSubjectDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/HostelDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/NonAcademicStaffDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/PermissionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/StudentClubDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/StudentHostelDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/StudentTransportDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/TermDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/TransportDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/ExamSubjectEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/NonAcademicStaffEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/PermissionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/TermEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myschool/repository/RepositoryMethodExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/config/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/dto/AademicYearDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/dto/ClassDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/AcademicYearEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/ClassEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/ClassSubjectEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/ExamEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/ExamSubjectEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/FeeCategoriesEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/MarksEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/NonAcademicStaffEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/ParentEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/PermissionEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/RoleEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/SchoolEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/StudentAttendanceEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/StudentEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/StudentFeesEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/StudentParentEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/SubjectEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/TeacherEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/TermEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/TimeSlotEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/TimeTableEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/entity/UserEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/util/AttendanceStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/util/DayOfWeekEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/util/ExamType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/util/FeeStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/util/Gender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school/util/Status.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/dto/RoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/dto/RoleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/AcademicYearEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/AcademicYearEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/ClassEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/ClassEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/ClubEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/ClubEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/ExamEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/ExamEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/FeeCategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/FeeCategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/FeeStructureEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/FeeStructureEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/HostelEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/HostelEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/ParentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/ParentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/RoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/RoleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/SchoolEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/SchoolEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/StudentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/StudentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/SubjectEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/SubjectEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/TeacherEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/TeacherEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/TransportEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/TransportEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myschool/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myschool/entity/UserEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +80,14 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.Main.executor": "Run",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
@@ -124,12 +128,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769617354207</updated>
-      <workItem from="1769617357880" duration="52000" />
+      <workItem from="1769617357880" duration="3073000" />
     </task>
+    <task id="LOCAL-00001" summary="add DTOs, enums, and service interfaces for school management system">
+      <option name="closed" value="true" />
+      <created>1769617513568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769617513568</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update application.yml for JPA ddl-auto setting and add XML configuration files for data migration and project settings">
+      <option name="closed" value="true" />
+      <created>1769617549441</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769617549441</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add DTOs, enums, and service interfaces for school management system" />
+    <MESSAGE value="update application.yml for JPA ddl-auto setting and add XML configuration files for data migration and project settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="update application.yml for JPA ddl-auto setting and add XML configuration files for data migration and project settings" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

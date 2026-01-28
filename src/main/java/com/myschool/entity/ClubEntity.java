@@ -2,6 +2,7 @@ package com.myschool.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.util.Set;
 
 @Data
 @Entity
@@ -16,4 +17,8 @@ public class ClubEntity {
     @ManyToOne
     @JoinColumn(name = "teacher_in_charge_id")
     private TeacherEntity teacherInCharge;
+
+    // Many-to-Many relationship with students via junction entity
+    @OneToMany(mappedBy = "club")
+    private Set<StudentClubEntity> members;
 }

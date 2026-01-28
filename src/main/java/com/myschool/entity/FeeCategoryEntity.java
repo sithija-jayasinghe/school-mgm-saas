@@ -16,4 +16,7 @@ public class FeeCategoryEntity {
     private SchoolEntity school;
 
     private String name;
+
+    // Collection removed - use repository queries
+    // Use: feeStructureRepository.findByFeeCategory(feeCategory)
 }

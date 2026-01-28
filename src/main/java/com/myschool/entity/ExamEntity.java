@@ -4,6 +4,7 @@ import com.myschool.util.ExamType;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Data
 @Entity
@@ -23,4 +24,11 @@ public class ExamEntity {
     @ManyToOne
     @JoinColumn(name = "academic_year_id")
     private AcademicYearEntity academicYear;
+
+    // Keep examSubjects - useful for exam scheduling (small collection)
+    @OneToMany(mappedBy = "exam")
+    private Set<ExamSubjectEntity> examSubjects;
+
+    // High-volume collection removed
+    // Use repository queries: markRepository.findByExam(exam)
 }

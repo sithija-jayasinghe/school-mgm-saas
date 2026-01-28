@@ -2,6 +2,7 @@ package com.myschool.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.util.Set;
 
 @Data
 @Entity
@@ -25,4 +26,13 @@ public class ClassEntity {
     @ManyToOne
     @JoinColumn(name = "class_teacher_id")
     private TeacherEntity classTeacher;
+
+    // Keep only subjects - useful for timetable/curriculum management
+    @OneToMany(mappedBy = "currentClass")
+    private Set<ClassSubjectEntity> subjects;
+
+    // High-volume collections removed
+    // Use repository queries: studentRepository.findByCurrentClass(class)
+    // Use repository queries: timetableRepository.findByCurrentClass(class)
+    // Use repository queries: feeStructureRepository.findByCurrentClass(class)
 }

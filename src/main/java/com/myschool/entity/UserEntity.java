@@ -31,4 +31,17 @@ public class UserEntity {
 
     private LocalDateTime lastLogin;
     private LocalDateTime createdAt;
+
+    // Bidirectional relationships - One user can be linked to one profile type
+    @OneToOne(mappedBy = "user")
+    private StudentEntity student;
+
+    @OneToOne(mappedBy = "user")
+    private TeacherEntity teacher;
+
+    @OneToOne(mappedBy = "user")
+    private ParentEntity parent;
+
+    @OneToOne(mappedBy = "user")
+    private NonAcademicStaffEntity nonAcademicStaff;
 }

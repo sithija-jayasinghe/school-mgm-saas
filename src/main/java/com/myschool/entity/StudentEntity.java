@@ -3,6 +3,7 @@ package com.myschool.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Data
 @Entity
@@ -31,4 +32,22 @@ public class StudentEntity {
     private String gender;
     private String address;
     private String status;
+
+    // Small, useful bidirectional collections (typically < 10 items)
+    @OneToMany(mappedBy = "student")
+    private Set<StudentParentEntity> parents;
+
+    @OneToMany(mappedBy = "student")
+    private Set<StudentClubEntity> clubs;
+
+    @OneToMany(mappedBy = "student")
+    private Set<StudentHostelEntity> hostelAssignments;
+
+    @OneToMany(mappedBy = "student")
+    private Set<StudentTransportEntity> transportAssignments;
+
+    // High-volume collections removed to prevent performance issues
+    // Use repository queries: attendanceRepository.findByStudent(student)
+    // Use repository queries: feeRepository.findByStudent(student)
+    // Use repository queries: markRepository.findByStudent(student)
 }
